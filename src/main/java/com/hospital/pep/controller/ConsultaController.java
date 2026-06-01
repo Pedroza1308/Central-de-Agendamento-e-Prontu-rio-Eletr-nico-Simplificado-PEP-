@@ -1,4 +1,4 @@
-package main.com.hospital.pep.controller;
+package com.hospital.pep.controller;
 
 import com.hospital.pep.model.Consulta;
 import com.hospital.pep.service.ConsultaService;

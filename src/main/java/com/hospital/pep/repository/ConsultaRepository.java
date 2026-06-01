@@ -1,4 +1,4 @@
-package main.com.hospital.pep.repository;
+package com.hospital.pep.repository;
 
 import com.hospital.pep.model.Consulta;
 import org.springframework.data.jpa.repository.JpaRepository;

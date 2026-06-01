@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Agendamento - MV</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding-top: 50px; }
+        .form-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 450px; }
+        h2 { color: #333; text-align: center; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 5px; color: #555; }
+        .form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #0056b3; color: white; padding: 12px; border: none; border-radius: 4px; width: 100%; font-size: 16px; cursor: pointer; transition: 0.3s; }
+        button:hover { background-color: #004494; }
+        #mensagem { margin-top: 15px; padding: 10px; display: none; border-radius: 4px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Agendar Consulta</h2>
+    <form id="formAgendamento">
+        <div class="form-group">
+            <label for="medico">ID do Médico:</label>
+            <input type="number" id="medico" required placeholder="Ex: 1">
+        </div>
+        <div class="form-group">
+            <label for="paciente">ID do Paciente:</label>
+            <input type="number" id="paciente" required placeholder="Ex: 1">
+        </div>
+        <div class="form-group">
+            <label for="dataHora">Data e Hora:</label>
+            <input type="datetime-local" id="dataHora" required>
+        </div>
+        <div class="form-group">
+            <label for="notas">Observações:</label>
+            <input type="text" id="notas" placeholder="Sintomas, queixas, etc.">
+        </div>
+        <button type="submit">Confirmar Agendamento</button>
+    </form>
+    <div id="mensagem"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
